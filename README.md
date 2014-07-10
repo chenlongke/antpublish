@@ -129,7 +129,7 @@ Done, without errors.
 使用方法：
 
 ```
-./uploadcdn <localdir> <ossdir>
+./uploadcdn <bucketname> <localdir> <ossdir>
 ```
 
 例如，在数据中这么用，把mobile目录快速上传
