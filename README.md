@@ -4,7 +4,7 @@
 ###1.1 工具目标
 1. 蚂蚁发布期望建立一种快捷简洁的代码自动化发布工具，减少在上线环节出错的可能性
 2. 目前仅支持Linux，未来将支持Windows 7及以上操作系统
-3. 先期功能比较有限，例如还不支持ABCH版本，等我弄明白了就做
+3. 先期功能比较有限，
 
 ###1.2 获得方式
 此工具，源码放在github上，fork地址 https://github.com/seamanjiang/antpublish
@@ -122,6 +122,19 @@ Running "exec:cdn" (exec) task
 
 Done, without errors.
 
+```
+###2.4 uploadcdn 命令
+
+使用本命令，可以快速的把一个目录，传递到cdn上。
+使用方法：
+
+```
+./uploadcdn <localdir> <ossdir>
+```
+
+例如，在数据中这么用，把mobile目录快速上传
+```
+./uploadcdn qniyong /srv/udp.loveapp.cn/cdn/v20140709/mobile udp/v20140709/mobile
 ```
 
 ##3. 准备环境

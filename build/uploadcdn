@@ -4,8 +4,8 @@ date_default_timezone_set('Asia/Shanghai');
 define('ALI_LOG', FALSE);   //是否记录日志
 define('ALI_DISPLAY_LOG', FALSE);   //是否显示LOG输出
 
-define('OSS_ACCESS_ID', '');
-define('OSS_ACCESS_KEY', '');
+define('OSS_ACCESS_ID', 'fuMZWswv8s3JuIul');
+define('OSS_ACCESS_KEY', 'WdOsRMn2typuCYGC1rwmRvlJPEB3uq');
 
 $arguments = array();
 foreach($argv as $k => $arg) {
@@ -1365,7 +1365,7 @@ class ALIOSS{
 
 		$extension = explode ( '.', $file );
 		$extension = array_pop ( $extension );
-		if(strpos($extension,"/")>0){
+		if(strpos($extension,"/")>-1){
 		    $extension = "";
 		}
 
